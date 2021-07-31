@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Joseph T. | Front-End Developer | Film Photographer</title>
+  </head>
+
+<body>
+
+    <section class="hero">
+        <nav class="navbar">
+          <a class="link-item" href="#about-section">About</a>
+          <a class="link-item" href="#work-section">Projects</a>
+          <a class="link-item" href="#contact-section">Contact</a>
+        </nav>
+
+      <div class="inner-hero">
+        <h1>My Site</h1>
+        <h3>:: Front-End Developer & Film Photographer ::</h3>
+      </div>
+    </section>
+
+    <main>
+      <section class="about" id="about-section">
+        <div class="inner-about">
+          <h1>Me</h1>
+          <p>Joseph is a self-taught front-end web developer & Colorado based amateur film photographer.
+            Travelling as much as he can to wherever he can.</p>
+        </div>
+      </section>
+
+      <section class="work" id="work-section">
+        <div class="inner-work">
+          <h1>Work</h1>
+          <p>Website 1 info here</p>
+          <p>Website 2 info here</p>
+          <p>Website 3 info here</p>
+        </div>
+      </section>
+
+      <section class="contact-resume" id="contact-section">
+        <div class="inner-contact">
+          <h1>Contact</h1>
+          <p>Contact info here</p>
+        </div>
+      </section>
+    </main>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+      var mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+</body>
+</html>
